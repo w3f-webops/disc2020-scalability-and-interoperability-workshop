@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("fonts/SuisseIntl-Regular-WebM.eot");
+  src: url("fonts/SuisseIntl-Regular-WebM.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/SuisseIntl-Regular-WebM.woff2") format("woff2"),
+    url("fonts/SuisseIntl-Regular-WebM.woff") format("woff"),
+    url("fonts/SuisseIntl-Regular-WebM.svg#SuisseIntl-Regular-WebM")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntl-SemiBold-WebM.eot");
+  src: url("../fonts/SuisseIntl-SemiBold-WebM.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SuisseIntl-SemiBold-WebM.woff2") format("woff2"),
+    url("../fonts/SuisseIntl-SemiBold-WebM.woff") format("woff"),
+    url("../fonts/SuisseIntl-SemiBold-WebM.svg#SuisseIntl-SemiBold-WebM")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+body {
+  font-family: "SuisseIntl", sans-serif;
+}
+
+header {
+  color: white;
+  background: black;
+}
+
+.wrapper {
+  max-width: 720px;
+  padding: 6vw;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+h2 {
+  line-height: 1.6;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+#logo {
+  width: 160px;
+}
