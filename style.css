@@ -46,6 +46,8 @@ h1 {
 
 h2 {
   line-height: 1.6;
+  font-size: 2rem;
+  margin-top: 4rem;
 }
 
 p {
@@ -55,4 +57,19 @@ p {
 
 #logo {
   width: 160px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
 }
