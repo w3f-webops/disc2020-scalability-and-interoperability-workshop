@@ -231,10 +231,6 @@ body {
   font-weight: 700;
 }
 
-.schedule-topic {
-  font-style: italic;
-}
-
 .schedule-position {
   color: var(--dim);
 }
