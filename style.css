@@ -61,6 +61,8 @@ body {
 
 .column {
   padding-right: 4rem;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
 .left,
@@ -84,8 +86,8 @@ body {
 }
 
 /* ==========================================================================
-   Header
-   ========================================================================== */
+      Header
+      ========================================================================== */
 
 .nav-bar {
   display: flex;
@@ -111,8 +113,8 @@ body {
 }
 
 /* ==========================================================================
-   Hero
-   ========================================================================== */
+      Hero
+      ========================================================================== */
 
 .hero {
   color: white;
@@ -208,13 +210,17 @@ body {
 }
 
 /* ==========================================================================
-   Content
-   ========================================================================== */
+      Content
+      ========================================================================== */
 
 .content {
   background: white;
   padding: 6vw 0;
 }
+
+/*
+      Schedule
+      ========================================================================== */
 
 .schedule {
   list-style: none;
@@ -239,9 +245,47 @@ body {
   color: var(--dim);
 }
 
+.schedule-contents {
+  position: relative;
+  cursor: pointer;
+  padding: 0 1.4rem;
+}
+
+.schedule-contents .schedule-contents__title::before {
+  content: "";
+  background-image: url(arrow-dropright.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  font-size: 13px;
+  left: -1px;
+  top: 6px;
+  transition: all 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+.schedule-contents:not(.is-open):hover .schedule-contents__title::before {
+  transform: rotate(90deg);
+}
+
+.schedule-contents.is-open .schedule-contents__title::before {
+  transform: rotate(90deg);
+}
+
+.schedule-contents .schedule-contents__content {
+  display: none;
+  padding: 0.6rem 0;
+}
+
+.schedule-contents .schedule-contents__content p:last-of-type {
+  margin: 0;
+}
+
 /* ==========================================================================
-   Footer
-   ========================================================================== */
+      Footer
+      ========================================================================== */
 
 footer {
   padding: 1rem 0;
@@ -264,8 +308,8 @@ footer .right {
 }
 
 /* ==========================================================================
-   Typography
-   ========================================================================== */
+      Typography
+      ========================================================================== */
 
 h1 {
   font-size: 6vw;
@@ -315,8 +359,8 @@ a:hover {
 }
 
 /* ==========================================================================
-   Utils
-   ========================================================================== */
+      Utils
+      ========================================================================== */
 
 @keyframes slideInFromBottom {
   0% {
@@ -327,4 +371,18 @@ a:hover {
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
